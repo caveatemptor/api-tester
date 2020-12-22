@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>API tester</title>
+    </head>
+    <body>
+        <h3>Select project</h3>
+        {% for project in projects %}
+        <a href="/project/{{project.slug}}">{{ project.name }}</a>
+        {% endfor %}
+    </body>
+</html>
